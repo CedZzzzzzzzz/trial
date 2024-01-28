@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root {
+    --maroon:#800000;
+}
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background:#fff;
+    background-size: cover;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+}
+.btn{
+    margin-top: 16px;
+    display: inline-block;
+    padding: 12px 48px;
+    color:#fff;
+    font-size:29px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0,0,0,0.5);
+}
+.btn:hover{
+    background: #813a3a;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #800000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1px 7%;
+    box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+nav {
+    margin-left: 20px;
+}
+header a {
+    color: white;
+    font-size:22px;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+header a:hover {
+    color: #FFD700;
+}
+.icons {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    margin: 2px;
+    margin-left: 1.7rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+.icons a:hover {
+    color: #000;
+}
+.container{
+    padding-top: 150px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+footer{
+    margin-top: 297px;
+    background-color: #800000;
+    border-top: 1px solid #000;
+}
+.f-container {
+    width: 100%;
+    padding: 50px 30px 20px;
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+}
+.socialmedia a{
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    padding:10px;
+}
+.socialmedia a i{
+    font-size: 25px;
+    color: #800000;
+    opacity: .8;
+}
+.socialmedia a:hover{
+    background-color: #800000;
+    transition: .3s;
+}
+.socialmedia a i:hover{
+    color: #FFD700;
+    transition: .3s;
+}
+.f-nav{
+    margin: 30px;
+}
+.f-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.f-nav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.4;
+    transition: .3s;
+}
+.f-nav ul li a:hover{
+    opacity: 1;
+}
+.b-footer{
+    text-align: center;
+    color: #fff;
+    font-size: small;
+    font-family: cursive;
+}
+@media (max-width: 1024px){
+    .logo img {
+        width: 180px;
+    }
+    
+}
+@media (max-width: 768px){
+    .logo img {
+        width: 120px;
+    }
+    .header .navigation a {
+        font-size: 12px;
+    }
+    .icons a{
+        font-size: 12px;
+    } 
+}
+@media (max-width: 425px){
+    .logo img {
+        width: 120px;
+    }
+    .header .navigation a {
+        font-size: 12px;
+        display: none;
+    }
+    .icons a{
+        font-size: 12px;
+    } 
+    .f-nav {
+        margin: 10px;
+    }
+
+    .f-nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: none;
+    }
+
+    .f-nav ul li a {
+        margin: 5px;
+    }
+
+    .socialmedia {
+        justify-content: center;
+    }
+
+    .f-container {
+        padding: 15px 10px 5px;
+    }
+
+    .b-footer {
+        margin-top: 20px;
+        font-size: x-small;
+    } 
+}
