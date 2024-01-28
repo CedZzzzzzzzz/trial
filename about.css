@@ -140,13 +140,6 @@ footer{
     margin: 6px 0;
 }
 @media screen and (max-width: 768px) {
-    body, html {
-        margin: 0;
-        padding: 0;
-    }
-    .header {
-        box-sizing: border-box;
-    }
     .menu-btn {
         display: flex;
     }
@@ -162,14 +155,12 @@ footer{
         background-color: #800000;
         box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.2);
         z-index: 999;
-        width: 100%;
     }
     .navigation a{
         margin-right: 10px;
     }
     nav.show-nav {
         display: flex;
-        justify-content: center;
     }
 
     nav ul {
