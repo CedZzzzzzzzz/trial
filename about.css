@@ -191,4 +191,7 @@ footer{
     .show-nav {
         display: flex;
     }
+    .f-nav {
+        display: none;
+    }
 }
