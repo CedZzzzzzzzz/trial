@@ -28,14 +28,14 @@
                 <a href="#"><div id="menu-btn" class="fas fa-bars"></div></a>
             </div>
         </header>
-        <<div class="container">
+        <div class="container">
             <h2 class="text-center font-weight-bold">Our Partners</h2>
             <section class="customer-logos slider">
                 <div class="slide"><img src="Images/Starbucks_Corporation_Logo_2011.svg.png" alt="logo"></div>
-                <div class="slide"><img src="images/Coffee_Bean_&_Tea_Leaf_logo.svg" alt="logo"></div>
-                <div class="slide"><img src="images/youtube-logo.jpeg" alt="logo"></div>
+                <div class="slide"><img src="Images/Coffee_Bean_&_Tea_Leaf_logo.svg" alt="logo"></div>
+                <div class="slide"><img src="Images/youtube-logo.jpeg" alt="logo"></div>
                 <div class="slide"><img src="Images/images (1).png" alt="logo"></div>
-                <div class="slide"><img src="images/grab.png" alt="logo"></div>
+                <div class="slide"><img src="Images/grab.png" alt="logo"></div>
                 <div class="slide"><img src="Images/Max's_Restaurant_logo.svg.png" alt="logo"></div>
                 <div class="slide"><img src="Images/modern-badge-logo-instagram-icon_578229-124.avif" alt="logo"></div>
                 <div class="slide"><img src="Images/hk.jpg" alt="logo"></div>
@@ -87,6 +87,16 @@
                 });
             });
         
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const menuBtn = document.getElementById('menu-btn');
+                    const navigation = document.querySelector('.navigation');
+            
+                    menuBtn.addEventListener('click', function () {
+                        navigation.classList.toggle('show-nav');
+                    });
+                });
             </script>
     </body>
 </html>
