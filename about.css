@@ -70,60 +70,6 @@ header a:hover {
 .icons a:hover {
     color: #000;
 }
-.about{
-    font-size: 25px;
-    padding: 100px 0 45px;
-    background-color: rgb(119, 28, 28);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2.5%;
-    margin-bottom: 20px;
-}
-.about h1{
-    color: beige;
-    font-family:sans-serif ;
-    text-align: center;
-    padding-bottom: 20px;
-}
-.a-pic {
-    display: flex;
-    margin-top: 10px;
-}
-.image{
-    width: 50%;
-    margin-right: -12%;
-}
-.image img {
-    width: auto;
-    height: 50%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    margin:60px 0 0 170px; 
-    align-items: center;
-    border-radius: 25px;
-    border: 2px solid #000;
-    
-}
-.a-text {
-    width: 40%;
-    padding: 20px;
-    box-sizing: border-box;
-    font-size: large;
-    padding-right: 300px;
-    padding-top: 150px;
-    text-align: justify;
-    margin-top: 0px;
-}
-.a-text a.btn {
-    background-color: #FFD700;
-    color: black;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-}
-.a-text a.btn:hover{
-    background-color:#813a3a;
-}
 footer{
     background-color: #800000;
 }
@@ -181,81 +127,68 @@ footer{
     font-size: small;
     font-family: cursive;
 }
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 50%;
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: flex;
     }
 
-    .header {
-        padding: 1px 5%;
-    }
-
-    .navigation {
+    nav {
+        display: none;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        margin-top: 10px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #800000;
+        box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+    .navigation a{
+        margin-right: 10px;
+    }
+    nav.show-nav {
+        display: flex;
     }
 
-    .header a {
-        margin: 10px 0;
+    nav ul {
+        list-style: none;
+        padding: 0;
     }
 
-    .icons {
+    nav ul li {
         margin: 10px;
     }
-    .about h1 {
+
+    nav a {
+        color: #fff;
         font-size: 22px;
-        padding: 10px;
+        text-decoration: none;
+        transition: color 0.3s;
     }
 
-    .a-pic {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
+    nav a:hover {
+        color: #FFD700;
+    }
+    #menu-btn:hover {
+        color: #FFD700; 
+        transform: scale(1.1); 
+        transition: color 0.3s, transform 0.3s; 
     }
 
-    .image {
-        width: 80%; /* Adjust the width of the image */
-        margin-right: 0;
-    }
-
-    .a-text {
-        width: 100%;
-        padding: 20px;
-        padding-right: 20px;
-        text-align: justify;
-        margin-top: 20px;
-    }
-
-    img[src="Images/pogi.jpeg"] {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .btn {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .f-container {
-        padding: 30px 10px 20px;
+    .show-nav {
+        display: flex;
     }
 }
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #800000;
-    display: flex;
-    flex-wrap: wrap; /* Adjust for responsiveness */
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 5%; /* Adjust padding for responsiveness */
-    box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-

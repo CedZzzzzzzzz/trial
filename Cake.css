@@ -887,7 +887,7 @@ footer{
         font-size: x-small;
     }  
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 398px) {
     .header img {
         max-width: 60%; 
         height: auto;
@@ -1158,5 +1158,7 @@ footer{
     .b-footer {
         margin-top: 10px;
         font-size: x-small;
-    }     
+    }  
+
+    
 }
