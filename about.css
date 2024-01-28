@@ -140,6 +140,9 @@ footer{
     margin: 6px 0;
 }
 @media screen and (max-width: 768px) {
+    .header .logo img {
+        width: 200px;
+    }
     .menu-btn {
         display: flex;
     }
