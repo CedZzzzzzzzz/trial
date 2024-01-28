@@ -887,7 +887,7 @@ footer{
         font-size: x-small;
     }  
 }
-@media (max-width: 398px) {
+@media (max-width: 390px) {
     .header img {
         max-width: 60%; 
         height: auto;
