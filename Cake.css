@@ -1158,7 +1158,38 @@ footer{
     .b-footer {
         margin-top: 10px;
         font-size: x-small;
-    }  
+    }     
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 1rem 2%;
+    }
 
-    
+    .header .logo img {
+        width: 100px;
+    }
+
+    .header a {
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .hpage .slides-container .slide {
+        padding-left: 5rem;
+    }
+
+    .hpage .slides-container .slide .content h3 {
+        font-size: 3rem;
+    }
+
+    #prev-slide,
+    #next-slide {
+        font-size: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
 }
