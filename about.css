@@ -146,7 +146,6 @@ footer{
     .menu-btn {
         display: flex;
     }
-
     nav {
         display: none;
         flex-direction: column;
