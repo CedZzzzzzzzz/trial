@@ -143,58 +143,25 @@ footer{
     .header .logo img {
         width: 150px;
     }
-    .menu-btn {
-        display: flex;
-    }
-    nav {
+    .navigation {
         display: none;
+    }
+    .navigation.active {
+        display: flex;
         flex-direction: column;
-        align-items: center;
         position: absolute;
-        top: 70px;
-        left: 0;
+        top: 50px;
         right: 0;
-        background-color: #800000;
-        box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.2);
-        z-index: 999;
+        background-color: rgba(131, 14, 14, 0.3);
+        padding: 15px;
+        z-index: 1000;
+        clip-path: polygon( 0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+        backdrop-filter: blur(10px);
+        height: auto;
     }
-    .navigation a{
-        margin-right: 10px;
-    }
-    nav.show-nav {
-        display: flex;
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 10px;
-    }
-
-    nav a {
-        color: #fff;
-        font-size: 22px;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    nav a:hover {
-        color: #FFD700;
-    }
-    #menu-btn:hover {
-        color: #FFD700; 
-        transform: scale(1.1); 
-        transition: color 0.3s, transform 0.3s; 
-    }
-
-    .show-nav {
-        display: flex;
-    }
-    .f-nav {
-        display: none;
-    }
-    
+    .navigation.active a {
+        margin: 10px 0;
+        text-align: center;
+    }  
 }

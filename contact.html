@@ -99,13 +99,8 @@
             </div>
         </footer>
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const menuBtn = document.getElementById('menu-btn');
-                const navigation = document.querySelector('.navigation');
-        
-                menuBtn.addEventListener('click', function () {
-                    navigation.classList.toggle('show-nav');
-                });
+            document.getElementById('menu-btn').addEventListener('click', function () {
+                document.querySelector('.navigation').classList.toggle('active');
             });
         </script>
     </body>
