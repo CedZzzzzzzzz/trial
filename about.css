@@ -190,43 +190,57 @@ footer{
         padding: 1px 5%;
     }
 
-    .a-pic {
+    .navigation {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        margin-top: 10px;
     }
 
-    .image {
-        width: 100%;
-        margin-right: 0;
+    .header a {
+        margin: 10px 0;
+    }
+
+    .icons {
+        margin: 10px;
     }
 
     .a-text {
         width: 100%;
         padding: 20px;
         padding-right: 20px;
+        text-align: justify;
+        margin-top: 20px;
     }
 
     img[src="Images/pogi.jpeg"] {
+        width: 100%;
         margin-left: 0;
         margin-top: 20px;
     }
 
-    footer {
-        text-align: center;
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
     }
 
-    .socialmedia {
-        flex-direction: column;
-    }
-
-    .socialmedia a {
-        margin: 5px;
+    .f-container {
+        padding: 30px 10px 20px;
     }
 }
 
-.btn {
-    /* Adjust button styles for better responsiveness */
-    font-size: 20px;
-    padding: 10px 30px;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #800000;
+    display: flex;
+    flex-wrap: wrap; /* Adjust for responsiveness */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%; /* Adjust padding for responsiveness */
+    box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
