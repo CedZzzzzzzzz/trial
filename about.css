@@ -164,4 +164,7 @@ footer{
         margin: 10px 0;
         text-align: center;
     }  
+    .f-nav{
+        display: none;
+    }
 }
