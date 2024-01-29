@@ -335,15 +335,9 @@ footer{
     }
 }
 @media (max-width: 768px) {
-    .header {
-        padding: 1px 5%;
-    }
 
     .header .logo img {
         width: 150px;
-    }
-    header a {
-        margin: 10px 0;
     }
     .contact {
         padding: 20px;
@@ -384,7 +378,7 @@ footer{
 @media (max-width: 600px) {
 
     .header .logo img {
-        width: 150px;
+        width: 160px;
     }
     .icons {
         margin-left: 0;
@@ -392,6 +386,8 @@ footer{
 
     .icons a {
         margin: 5px;
+        font-size: 15px;
+        padding-right: 10px;
     }
 
     .contact {
