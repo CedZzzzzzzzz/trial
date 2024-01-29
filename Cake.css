@@ -895,6 +895,19 @@ footer{
     }  
 }
 @media (max-width: 398px) {
+    .navigation.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 0.4;
+        background-color: rgba(128, 0, 0, 0.3);
+        padding: 15px;
+        z-index: 1000;
+        clip-path: polygon( 0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+        backdrop-filter: blur(10px);
+    }
     .header img {
         max-width: 60%; 
         height: auto;
@@ -1165,7 +1178,55 @@ footer{
     .b-footer {
         margin-top: 10px;
         font-size: x-small;
-    }  
+    }    
+}
+@media (max-width: 220px) {
+    html {
+        font-size: 8%;
+    }
 
+    .header .logo img {
+        width: 80px;
+    }
+
+    .header a {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 8px;
+    }
+
+    .icons {
+        margin-right: 2rem;
+    }
+
+    section {
+        padding: 1px 1%;
+        display: none;
+    }
+    .pastry{
+        font-size: 10px;
+    }
+    .Present {
+        font-size: 5px;
+    }
+    .about {
+        font-size: 6px;
+    }
+    .image{
+        width: 250%;
+    }
+    .image img{
+        width: 250%;
+        height: auto;
+        margin-left: 50px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .a-text{
+        margin-top: 70px;
+        font-size: 5px;
+    }
     
 }

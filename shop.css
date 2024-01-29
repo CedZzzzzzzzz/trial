@@ -263,15 +263,22 @@ footer{
     }   
 }
 @media (max-width: 425px) {
+    .navigation.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background-color: rgba(131, 14, 14, 0.3);
+        padding: 15px;
+        z-index: 1000;
+        clip-path: polygon( 0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+        backdrop-filter: blur(10px);
+        height: auto;
+    }
     .header .logo img {
         width: 100px;
-    }
-    .header .navigation a{
-        font-size: 12px;
-        display: none;
-    }
-    .icons {
-        padding-right: 25px;
     }
     .order {
         margin-top: 80px;
